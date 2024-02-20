@@ -1,27 +1,17 @@
-import banner from "../../assets/img/Banner_reflorescer_4.png"
+import banner from "../../assets/img/Banner_reflorescer_5.png"
 
 
 function Home() {
     return (
         <>
-        {/* <div className="bg-indigo-900 flex justify-center">
-          <div className='container grid grid-cols-2 text-white'>
-            <div className="flex flex-col gap-4 items-center justify-center py-4">
-              <h2 className='text-5xl font-bold'>Seja bem vinde!</h2>
-              <p className='text-xl'>Expresse aqui seus pensamentos e opniões</p>
 
-              <div className="flex justify-around gap-4">
-              </div>
-            </div> */}
-
-            <div className="flex justify-around ">
-              <img src={banner} alt="banner" className='w-auto' />
-
+            <div className="flex flex-col justify-around ">
+                <img src={banner} alt="banner" className='w-auto' />
+                <p className="py-6 text-center font-mono text-2xl bg-green-100">Somos uma empresa dedicada à produção e comercialização de mudas para restauração florestal em propriedades rurais. Comprometidos com a visão de que o desenvolvimento só é possível com sustentabilidade, facilitamos o acesso de milhares de indivíduos que compartilham dessa crença. Estamos empenhados em fornecer soluções eficazes para a conservação e regeneração do meio ambiente, contribuindo assim para um futuro mais sustentável e equilibrado.</p>
             </div>
-          {/* </div>
-        </div> */}
 
-      </>
+
+        </>
     );
 }
 
