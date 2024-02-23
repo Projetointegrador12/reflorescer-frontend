@@ -13,8 +13,9 @@ function Navbar() {
             <Link to="/login" className="hover:underline">
               Login
             </Link>
-            <Link to="/home" className="hover:underline">
-              Home
+            <Link to='/home' className='hover:underline'>Home </Link>
+            <Link to="/cadastro" className="hover:underline">
+              Cadastrar
             </Link>
             <Link to="/sobre" className="hover:underline">
               Sobre

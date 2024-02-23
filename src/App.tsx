@@ -6,14 +6,21 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './paginas/home/Home';
 import Sobre from './paginas/sobre/Sobre'
 import Contato from './paginas/contato/Contato'
+import Login from './paginas/login/Login';
+import Cadastro from './paginas/cadastro/Cadastro';
+import { AuthProvider } from './context/AuthContext';
+
 function App() {
   return (
     <>
+    <AuthProvider>
         <BrowserRouter>
           <Navbar />
           <div className='min-h-[80vh]'>
             <Routes>
               <Route path="/" element={<Home />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/cadastro" element={<Cadastro />} />
               <Route path="/home" element={<Home />} />
               <Route path="/contato" element={<Contato />} />
               <Route path="/sobre" element={<Sobre />} />
@@ -21,6 +28,7 @@ function App() {
           </div>
           <Footer />
         </BrowserRouter>
+      </AuthProvider>
     </>
   );
 }
