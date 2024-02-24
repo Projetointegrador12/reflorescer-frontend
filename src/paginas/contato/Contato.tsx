@@ -15,7 +15,7 @@ function Contato() {
                                 name="name"
                                 id="name"
                                 placeholder="Nome Completo"
-                                className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+                                className="w-full rounded-lg border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-gray-800 focus:shadow-md"
                             />
                         </div>
                         <div className="mb-5">
@@ -30,7 +30,7 @@ function Contato() {
                                 name="email"
                                 id="email"
                                 placeholder="exemplo@dominio.com"
-                                className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+                                className="w-full rounded-lg border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-gray-800 focus:shadow-md"
                             />
                         </div>
                         <div className="mb-5">
@@ -45,7 +45,7 @@ function Contato() {
                                 name="subject"
                                 id="subject"
                                 placeholder="Qual o assunto?"
-                                className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+                                className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-gray-800 focus:shadow-md"
                             />
                         </div>
                         <div className="mb-5">
@@ -60,7 +60,7 @@ function Contato() {
                                 name="message"
                                 id="message"
                                 placeholder="Escreva a sua mensagem"
-                                className="w-full resize-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+                                className="w-full resize-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-gray-800 focus:shadow-md"
                             ></textarea>
                         </div>
                         <div>

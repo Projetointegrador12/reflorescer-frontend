@@ -1,26 +1,25 @@
 import { Link } from "react-router-dom";
-import homeLogo from "../../assets/img/planta-removebg-preview.png"
+import homeLogo from "../../assets/img/logo-reflorescer.png"
 function Navbar() {
   return (
     <>
-      <div className="w-full bg-green-500 text-white flex justify-center py-4">
+      <div className="w-full bg-lime-50 text-lime-800 flex justify-start px-2 py-4">
         <div className="container flex justify-between text-lg">
           <div className="flex justify gap-2">
-            <div className="text-4xl font-mono uppercase">Reflorescer</div>
-            <img src={homeLogo} alt="muda.png" className='w-9' />
+            <img src={homeLogo} alt="logo-reflorescer.png" className='w-60' />
           </div>
-          <div className="flex gap-4">
-            <Link to="/login" className="hover:underline">
+          <div className="flex gap-6">
+            <Link to="/login" className="hover:underline font-bold">
               Login
             </Link>
-            <Link to='/home' className='hover:underline'>Home </Link>
-            <Link to="/cadastro" className="hover:underline">
+            <Link to='/home' className='hover:underline font-bold text-wrap'>Home </Link>
+            <Link to="/cadastro" className="hover:underline font-bold">
               Cadastrar
             </Link>
-            <Link to="/sobre" className="hover:underline">
+            <Link to="/sobre" className="hover:underline font-bold">
               Sobre
             </Link>
-            <Link to="/contato" className="hover:underline">
+            <Link to="/contato" className="hover:underline font-bold">
               Contato
             </Link>
 
