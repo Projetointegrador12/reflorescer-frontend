@@ -71,37 +71,37 @@ function Cadastro() {
     <>
      {/* <!-- component -->
 <!-- Create by joker banny --> */}
-<div className="h-screen bg-indigo-100 flex justify-center items-center">
+<div className="h-screen bg-lime-50 flex justify-center items-center">
 	<div className="lg:w-2/5 md:w-1/2 w-2/3">
-		<form className ="bg-white p-10 rounded-lg shadow-lg min-w-full" onSubmit={cadastrarNovoUsuario}>
+		<form className ="bg-gray-100 p-10 rounded-lg shadow-lg min-w-full" onSubmit={cadastrarNovoUsuario}>
 			<h1 className="text-center text-2xl mb-6 text-gray-600 font-bold font-sans">Cadastrar</h1>
 			<div>
 				<label className="text-gray-800 font-semibold block my-3 text-md" htmlFor="username">Nome Completo</label>
-				<input className="w-full bg-gray-100 px-4 py-2 rounded-lg focus:outline-none" type="text" name="nomeUsuario" id="nomeUsuario" placeholder="Nome" value={usuario.nomeUsuario} 
+				<input className="w-full border-black px-4 py-2 rounded-lg border:outline-double" type="text" name="nomeUsuario" id="nomeUsuario" placeholder="Nome" value={usuario.nomeUsuario} 
               onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)} />
       </div>
 				<div>
 					<label className="text-gray-800 font-semibold block my-3 text-md" htmlFor="email">Email</label>
-					<input className="w-full bg-gray-100 px-4 py-2 rounded-lg focus:outline-none" type="text" name="usuario" id="usuario" placeholder="Usuario" value={usuario.usuario} 
+					<input className="w-full border-black px-4 py-2 rounded-lg border:outline-double" type="text" name="usuario" id="usuario" placeholder="Usuario" value={usuario.usuario} 
               onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)} />
       </div>
       <div>
 					<label className="text-gray-800 font-semibold block my-3 text-md" htmlFor="foto">Foto</label>
-					<input className="w-full bg-gray-100 px-4 py-2 rounded-lg focus:outline-none" type="text" name="foto" id="foto" placeholder="Foto" value={usuario.foto} 
+					<input className="w-full border-black px-4 py-2 rounded-lg border:outline-double" type="text" name="foto" id="foto" placeholder="Foto" value={usuario.foto} 
               onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)} />
       </div>
 					<div>
-						<label className="text-gray-800 font-semibold block my-3 text-md" htmlFor="password">Senha</label>
-						<input className="w-full bg-gray-100 px-4 py-2 rounded-lg focus:outline-none" type="text" name="senha" id="senha" placeholder="Senha" value={usuario.senha} 
+						<label className="text-gray-800 font-semibold block my-3 text-md " htmlFor="password">Senha</label>
+						<input className="w-full border-black px-4 py-2 rounded-lg border:outline-double" type="password" name="senha" id="senha" placeholder="Senha" value={usuario.senha} 
               onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}/>
       </div>
 						<div>
 							<label className="text-gray-800 font-semibold block my-3 text-md" htmlFor="confirm">Confirmar Senha</label>
-							<input className="w-full bg-gray-100 px-4 py-2 rounded-lg focus:outline-none" type="text" name="confirmarSenha" id="confirmarSenha" placeholder="Confirmar Senha" value={confirmaSenha}
+							<input className="w-full border-black px-4 py-2 rounded-lg border:outline-double" type="password" name="confirmarSenha" id="confirmarSenha" placeholder="Confirmar Senha" value={confirmaSenha}
               onChange={(e: ChangeEvent<HTMLInputElement>) => handleConfirmarSenha(e)}/>
       </div>
-							<button type="submit" className="w-full mt-6 bg-indigo-600 rounded-lg px-4 py-2 text-lg text-white tracking-wide font-semibold font-sans">Cadastrar</button>
-							<button type="submit" className="w-full mt-6 mb-3 bg-indigo-100 rounded-lg px-4 py-2 text-lg text-gray-800 tracking-wide font-semibold font-sans" onClick={back} >Cancelar</button>
+							<button type="submit" className="w-full mt-6 bg-amber-950 hover:bg-green-700 rounded-lg px-4 py-2 text-lg text-white tracking-wide font-semibold font-sans">Cadastrar</button>
+							<button type="submit" className="w-full mt-6 mb-3 bg-amber-100 hover:bg-green-700 rounded-lg px-4 py-2 text-lg text-gray-800 tracking-wide font-semibold font-sans" onClick={back} >Cancelar</button>
 		</form>
 	</div>
 </div>
