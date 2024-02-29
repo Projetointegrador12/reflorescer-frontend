@@ -21,14 +21,108 @@ function Home() {
             </div>
           </div>
         </div>
+        
         <div className="hidden lg:block lg:w-1/2 clip-path:polygon(10% 0, 100% 0%, 100% 100%, 0 100%)">
           <img src={imagemHome} alt="" className="max-w-full" />
           <div className=" ">
 
           </div>
         </div>
-
       </div>
+
+      <div className="h-screen bg-lime-50 flex items-center justify-center border-radius auto">
+      <h1> NAVEGUE POR CATEGORIAS</h1>
+      </div>
+      
+
+      <div className="h-screen bg-lime-50 flex items-center justify-center">
+        <div className="grid grid-cols-6 gap-2 px-16">
+          <div className="flex flex-col gap-2">
+            <a href="" className="bg-green-500 rounded-full">
+                <img src="https://global.cdn.magazord.com.br/vasoeflor/img/2022/09/produto/1182/muda-laranja-lima-do-ceu-90cm-muda.jpg?ims=fit-in/800x800/filters:fill(white)" className="hover:translate-x-1 hover:-translate-y-1 delay-50 duration-100 rounded-full"/>
+            </a>
+
+            <a href="#" className="text-green-500 text-gray-200 font-semibold flex justify-center"> FRUTÍFERA </a>
+
+            
+
+              <div className="flex flex-row flex-wrap gap-2 flex justify-center">
+                <a href="#" className="hover:bg-gray-600 text-gray-300 text-xs font-semibold bg-gray-700 px-2 py-1 rounded-full flex justify-center"> Nossas mudas </a>
+              </div>
+          </div>
+          
+          <div className="flex flex-col gap-2">
+            <a href="" className="bg-green-500 rounded-full">
+                <img src="https://global.cdn.magazord.com.br/vasoeflor/img/2022/09/produto/1182/muda-laranja-lima-do-ceu-90cm-muda.jpg?ims=fit-in/800x800/filters:fill(white)" className="hover:translate-x-1 hover:-translate-y-1 delay-50 duration-100 rounded-full"/>
+            </a>
+
+            <a href="#" className="text-green-500 text-gray-200 font-semibold flex justify-center"> FRUTÍFERA </a>
+
+            
+
+              <div className="flex flex-row flex-wrap gap-2 flex justify-center">
+                <a href="#" className="hover:bg-gray-600 text-gray-300 text-xs font-semibold bg-gray-700 px-2 py-1 rounded-full flex justify-center"> Nossas mudas </a>
+              </div>
+          </div>
+
+          <div className="flex flex-col gap-2">
+            <a href="" className="bg-green-500 rounded-full">
+                <img src="https://global.cdn.magazord.com.br/vasoeflor/img/2022/09/produto/1182/muda-laranja-lima-do-ceu-90cm-muda.jpg?ims=fit-in/800x800/filters:fill(white)" className="hover:translate-x-1 hover:-translate-y-1 delay-50 duration-100 rounded-full"/>
+            </a>
+
+            <a href="#" className="text-green-500 text-gray-200 font-semibold flex justify-center"> FRUTÍFERA </a>
+
+            
+
+              <div className="flex flex-row flex-wrap gap-2 flex justify-center">
+                <a href="#" className="hover:bg-gray-600 text-gray-300 text-xs font-semibold bg-gray-700 px-2 py-1 rounded-full flex justify-center"> Nossas mudas </a>
+              </div>
+          </div>
+
+          <div className="flex flex-col gap-2">
+            <a href="" className="bg-green-500 rounded-full">
+                <img src="https://global.cdn.magazord.com.br/vasoeflor/img/2022/09/produto/1182/muda-laranja-lima-do-ceu-90cm-muda.jpg?ims=fit-in/800x800/filters:fill(white)" className="hover:translate-x-1 hover:-translate-y-1 delay-50 duration-100 rounded-full"/>
+            </a>
+
+            <a href="#" className="text-green-500 text-gray-200 font-semibold flex justify-center"> HERBÁCEAS </a>
+
+            
+
+              <div className="flex flex-row flex-wrap gap-2 flex justify-center">
+                <a href="#" className="hover:bg-gray-600 text-gray-300 text-xs font-semibold bg-gray-700 px-2 py-1 rounded-full flex justify-center"> Nossas mudas </a>
+              </div>
+          </div>
+
+          <div className="flex flex-col gap-2">
+            <a href="" className="bg-green-500 rounded-full">
+                <img src="https://global.cdn.magazord.com.br/vasoeflor/img/2022/09/produto/1182/muda-laranja-lima-do-ceu-90cm-muda.jpg?ims=fit-in/800x800/filters:fill(white)" className="hover:translate-x-1 hover:-translate-y-1 delay-50 duration-100 rounded-full"/>
+            </a>
+
+            <a href="#" className="text-green-500 text-gray-200 font-semibold flex justify-center"> NATIVAS </a>
+
+            
+
+              <div className="flex flex-row flex-wrap gap-2 flex justify-center">
+                <a href="#" className="hover:bg-gray-600 text-gray-300 text-xs font-semibold bg-gray-700 px-2 py-1 rounded-full flex justify-center"> Nossas mudas </a>
+              </div>
+          </div>
+
+          <div className="flex flex-col gap-2">
+            <a href="" className="bg-green-500 rounded-full">
+                <img src="https://global.cdn.magazord.com.br/vasoeflor/img/2022/09/produto/1182/muda-laranja-lima-do-ceu-90cm-muda.jpg?ims=fit-in/800x800/filters:fill(white)" className="hover:translate-x-1 hover:-translate-y-1 delay-50 duration-100 rounded-full"/>
+            </a>
+
+            <a href="#" className="text-green-500 text-gray-200 font-semibold flex justify-center"> GRANDE PORTE </a>
+
+            
+
+              <div className="flex flex-row flex-wrap gap-2 flex justify-center">
+                <a href="#" className="hover:bg-gray-600 text-gray-300 text-xs font-semibold bg-gray-700 px-2 py-1 rounded-full flex justify-center"> Nossas mudas </a>
+              </div>
+          </div>
+        </div>
+      </div>
+      
 
 
     </>
