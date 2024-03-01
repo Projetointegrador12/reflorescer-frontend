@@ -1,4 +1,4 @@
-import './App.css';
+import "./App.css";
 
 import Navbar from './components/navbar/Navbar';
 import Footer from './components/footer/Footer';
@@ -16,10 +16,10 @@ import DeletarCategoria from './components/categorias/deletaCategoria/DeletaCate
 function App() {
   return (
     <>
-    <AuthProvider>
+      <AuthProvider>
         <BrowserRouter>
           <Navbar />
-          <div className='min-h-[80vh]'>
+          <div className="min-h-[80vh] bg-lime-50">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/login" element={<Login />} />
