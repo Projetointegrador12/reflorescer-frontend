@@ -1,4 +1,5 @@
 import imagemHome from "../../assets/img/imagem-home2.png";
+import ListaCategoria from "../../components/categorias/listaCategoria/ListaCategoria";
 
 function Home() {
   return (
@@ -35,6 +36,9 @@ function Home() {
             <img src={imagemHome} alt="" className="" />
           </div>
         </div>
+
+      </div>
+      <ListaCategoria />
 
         <div className="py-12 bg-lime-50 flex items-center justify-center border-radius auto">
           <h2 className="text-3xl font-bold text-amber-950 md:text-4xl">

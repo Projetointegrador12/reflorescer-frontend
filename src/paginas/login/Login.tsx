@@ -39,6 +39,45 @@ function Login() {
 
   return (
     <>
+      
+      <div className="bg-lime-50 flex justify-center items-center h-screen">
+
+        <div className="w-1/2 h-screen hidden lg:block">
+          <img src={imagemLogin} alt="Placeholder Image" className="object-cover w-full h-full rounded-r-[6rem]" />
+        </div>
+
+        <div className="lg:p-36 md:p-52 sm:20 p-8 w-full lg:w-1/2">
+          <h1 className="text-2xl font-semibold mb-4">Entrar</h1>
+          <form onSubmit={login}>
+
+            <div className="mb-4">
+              <label htmlFor="email" className="block text-gray-600">Email</label>
+              <input type="text" id="usuario" name="usuario" placeholder="Usuario" className="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-green-900" autoComplete="off" value={usuarioLogin.usuario}
+                onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)} />
+            </div>
+
+            <div className="mb-4">
+              <label htmlFor="password" className="block text-gray-600">Senha</label>
+              <input type="password" id="senha" name="senha" placeholder="Senha" className="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-green-900" autoComplete="off" value={usuarioLogin.senha}
+                onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)} />
+            </div>
+            <div className="mb-4 flex items-center">
+              <input type="checkbox" id="remember" name="remember" className="text-blue-500" />
+              <label className="text-gray-600 ml-2">Lembrar Informações</label>
+            </div>
+            <button type='submit' className="rounded bg-green-500 hover:bg-green-900 text-white w-1/2 py-2 flex justify-center">
+              {isLoading ? <RotatingLines
+                strokeColor="white"
+                strokeWidth="5"
+                animationDuration="0.75"
+                width="24"
+                visible={true}
+              /> :
+                <span>Entrar</span>}
+            </button>
+          </form>
+          <p className="text-gray-600 font-semibold rounded-md">
+            Ainda não tem uma conta?{' '}
       {/* <!-- component --> */}
       <div className="bg-lime-50 flex justify-center items-center h-screen">
         {/* <!-- Left: Image --> */}
@@ -120,6 +159,7 @@ function Login() {
           {/* <!-- Sign up  Link --> */}
           <p className="text-gray-600 font-semibold rounded-md">
             Ainda não tem uma conta?{" "}
+            
             <Link to="/cadastro" className="text-indigo-800 hover:underline">
               Cadastre-se
             </Link>

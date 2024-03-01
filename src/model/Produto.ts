@@ -1,4 +1,4 @@
-import Categoria from "./categoria";
+import Categoria from "./Categoria";
 
 export default interface Produto {
   id: number;
