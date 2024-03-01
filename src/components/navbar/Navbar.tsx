@@ -3,8 +3,6 @@ import { Link, useNavigate } from "react-router-dom";
 import homeLogo from "../../assets/img/logo-reflorescer.png"
 import { AuthContext } from "../../context/AuthContext";
 import { useContext } from "react";
-import { Link } from "react-router-dom";
-import homeLogo from "../../assets/img/logo-reflorescer.png";
         
 function Navbar() {
   const navigate = useNavigate()
@@ -39,10 +37,16 @@ function Navbar() {
             <Link to="/cadastroCategoria" className="hoover:underline font-bold">
               Categoria
             </Link>
+            <Link to="/categorias" className="hoover:underline font-bold">
+              Categorias
+            </Link>
+            <Link to="/cadastroProduto" className="hoover:underline font-bold">
+              Mudas
+            </Link>
             <Link to='' onClick={logout} className='hover:underline'>Sair</Link>
+            </div>
 
-
-      <nav className="bg-white border-gray-200 dark:bg-gray-900">
+      {/* <nav className="bg-white border-gray-200 dark:bg-gray-900">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <a
             href=""
@@ -112,8 +116,11 @@ function Navbar() {
             </ul>
           </div>
         </div>
-      </nav>
-    </>
+      </nav> */}
+      </div>
+      </div>
+      
+      </>
   );
 }
 
