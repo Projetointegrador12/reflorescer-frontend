@@ -1,5 +1,6 @@
 
 import imagemHome from "../../assets/img/imagem-home2.png";
+import ListaCategoria from "../../components/categorias/listaCategoria/ListaCategoria";
 
 function Home() {
   return (
@@ -29,7 +30,7 @@ function Home() {
         </div>
 
       </div>
-
+      <ListaCategoria />
 
     </>
   );
