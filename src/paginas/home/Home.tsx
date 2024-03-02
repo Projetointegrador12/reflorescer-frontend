@@ -45,7 +45,7 @@ function Home() {
           </h2>
         </div>
 
-        <div className="max-w-screen-xl flex flex-wrap md:flex-nowrap mx-auto px-16 py-8 gap-12">
+        {/* <div className="max-w-screen-xl flex flex-wrap md:flex-nowrap mx-auto px-16 py-8 gap-12">
           <div className="flex flex-col gap-2">
             <a href="" className="bg-green-500 rounded-full">
               <img
@@ -213,7 +213,8 @@ function Home() {
               </a>
             </div>
           </div>
-        </div>
+        </div> */}
+        <ListaCategoria />
     </>
   );
 }
