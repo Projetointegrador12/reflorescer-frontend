@@ -38,12 +38,12 @@ function Navbar() {
               Categoria
             </Link>
             <Link to="/categorias" className="hoover:underline font-bold">
-              Categorias
+             Categorias
             </Link>
             <Link to="/cadastroProduto" className="hoover:underline font-bold">
               Mudas
             </Link>
-            <Link to='' onClick={logout} className='hover:underline'>Sair</Link>
+            <Link to='' onClick={logout} className='hover:underline font-bold'>Sair</Link>
             </div>
 
       {/* <nav className="bg-white border-gray-200 dark:bg-gray-900">

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import imagemHome from "../../assets/img/imagem-home2.png";
 import ListaCategoria from "../../components/categorias/listaCategoria/ListaCategoria";
 import ListaProduto from "../../components/produtos/listaProduto/ListaProduto";
@@ -23,12 +24,10 @@ function Home() {
                 equilibrado.
               </p>
               <div className="flex justify-center lg:justify-start mt-6">
-                <a
-                  className="px-4 py-3 bg-amber-950 text-gray-200 text-xs font-semibold rounded hover:bg-amber-900"
-                  href="#"
-                >
-                  Nossas Mudas
-                </a>
+                <Link to={`/produtos`} className="px-4 py-3 bg-amber-950 text-gray-200 text-xs font-semibold rounded hover:bg-amber-900"
+                  href="#">
+                <button>Nossas Mudas</button>
+               </Link>
               </div>
             </div>
           </div>
@@ -215,7 +214,6 @@ function Home() {
             </div>
           </div>
         </div>
-      <ListaProduto />
     </>
   );
 }
