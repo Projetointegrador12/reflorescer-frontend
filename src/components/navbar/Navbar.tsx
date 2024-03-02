@@ -37,9 +37,6 @@ function Navbar() {
             <Link to="/cadastroCategoria" className="hoover:underline font-bold">
               Categoria
             </Link>
-            <Link to="/categorias" className="hoover:underline font-bold">
-             Categorias
-            </Link>
             <Link to="/cadastroProduto" className="hoover:underline font-bold">
               Mudas
             </Link>

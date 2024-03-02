@@ -7,7 +7,7 @@ function Home() {
   return (
     <>
       <div className="bg-lime-50">
-        <div className="max-w-screen-xl flex items-center justify-between mx-auto">
+        <div className=" flex items-center justify-between mx-auto">
           <div className="flex items-center text-center pt-8 lg:text-left px-8 md:px-12 lg:w-1/2">
             <div>
               <h2 className="text-3xl font-bold text-amber-950 md:text-4xl">
@@ -39,7 +39,7 @@ function Home() {
 
       </div>
 
-        <div className="py-12 bg-lime-50 flex items-center justify-center border-radius auto">
+        <div className="py- bg-lime-50 flex items-center justify-center border-radius auto">
           <h2 className="text-3xl font-bold text-amber-950 md:text-4xl">
             Categorias
           </h2>

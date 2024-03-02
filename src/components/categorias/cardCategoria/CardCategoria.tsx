@@ -4,8 +4,12 @@ import Categoria from '../../../model/Categoria';
 interface CardCategoriaProps {
   categoria: Categoria
 }
-
+// let img: string
 function CardCategoria({ categoria }: CardCategoriaProps) {
+  
+  // if (categoria.nomeCategoria === "Frutíferas"){
+  //           img = "https://images.tcdn.com.br/img/img_prod/350075/muda_de_acerola_gigante_50cm_feita_de_semente_6035_2_20220412114234.jpg"
+  // }
   return (
     // <div className='border flex flex-col rounded-2xl overflow-hidden justify-between'>
     //   <header className='py-2 px-6 bg-yellow-300 text-white font-bold text-2xl'>{categoria.nomeCategoria}</header>
@@ -19,28 +23,30 @@ function CardCategoria({ categoria }: CardCategoriaProps) {
     //     </Link>
     //   </div>
     // </div>
-    <div className="max-w-screen-xl flex flex-row md:flex-auto mx-auto px-20 py-4 gap-12">
-      <div className="flex flex-col gap-2">
+    
+    <div className="max-w-screen-xl flex flex-row md:grid-flow-col mx-auto px-16 gap-4">
+      <div className="flex flex-col justify-content align-center gap-2">
         <a href="" className="bg-green-500 rounded-full">
           <img
-            src="https://global.cdn.magazord.com.br/vasoeflor/img/2022/09/produto/1182/muda-laranja-lima-do-ceu-90cm-muda.jpg?ims=fit-in/800x800/filters:fill(white)"
+            src= "https://images.tcdn.com.br/img/img_prod/350075/muda_de_acerola_gigante_50cm_feita_de_semente_6035_2_20220412114234.jpg"
             className="hover:translate-x-1 hover:-translate-y-1 delay-50 duration-100 rounded-full"
             alt=""
           />
+      
         </a>
-
+       
         <a
           href="#"
-          className="text-green-500 text-gray-200 font-semibold flex justify-center"
+          className="text-green-500 font-semibold flex justify-center"
         >
           {" "}
           {categoria.nomeCategoria} {" "}
         </a>
 
-        <div className="flex flex-row flex-wrap gap-2 justify-center">
+        <div className="md:flex-1 flex-row flex-wrap gap-2 justify-center py-2 px-2">
 
           <Link to={`/categoria/${categoria.id}`} href="#"
-            className="hover:bg-gray-600 text-gray-300 text-xs font-semibold bg-gray-700 px-2 py-1 rounded-full flex justify-center">
+            className="hover:bg-gray-600 text-gray-300 text-xs font-semibold bg-gray-700 px-20 rounded-full flex justify-center">
             <button> {" "}
               Nossas mudas{" "}</button>
           </Link>
