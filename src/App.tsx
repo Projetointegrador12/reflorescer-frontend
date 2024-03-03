@@ -12,11 +12,16 @@ import { AuthProvider } from './context/AuthContext';
 import ListaCategoria from './components/categorias/listaCategoria/ListaCategoria';
 import FormularioCategoria from './components/categorias/formularioCategoria/FormularioCategoria';
 import DeletarCategoria from './components/categorias/deletaCategoria/DeletaCategoria';
+import ListaProduto from "./components/produtos/listaProduto/ListaProduto";
+import FormularioProduto from "./components/produtos/formularioProduto/FormularioProduto";
+import { ToastContainer } from "react-toastify";
+import DeletarProduto from "./components/produtos/deletaProduto/DeletaProduto";
 
 function App() {
   return (
     <>
       <AuthProvider>
+        <ToastContainer/>
         <BrowserRouter>
           <Navbar />
           <div className="min-h-[80vh] bg-lime-50">
@@ -31,6 +36,10 @@ function App() {
               <Route path="/cadastroCategoria" element={<FormularioCategoria />} />
               <Route path="/editarCategoria/:id" element={<FormularioCategoria />} />
               <Route path="/deletarCategoria/:id" element={<DeletarCategoria />} />
+              <Route path="/produtos" element={<ListaProduto />} />
+              <Route path="/cadastroProduto" element={<FormularioProduto />} />
+              <Route path="/editarProduto/:id" element={<FormularioProduto />} />
+              <Route path="/deletarProduto/:id" element={<DeletarProduto />} />
             </Routes>
           </div>
           <Footer />

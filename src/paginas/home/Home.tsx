@@ -1,11 +1,13 @@
+import { Link } from "react-router-dom";
 import imagemHome from "../../assets/img/imagem-home2.png";
 import ListaCategoria from "../../components/categorias/listaCategoria/ListaCategoria";
+import ListaProduto from "../../components/produtos/listaProduto/ListaProduto";
 
 function Home() {
   return (
     <>
       <div className="bg-lime-50">
-        <div className="max-w-screen-xl flex items-center justify-between mx-auto">
+        <div className=" flex items-center justify-between mx-auto">
           <div className="flex items-center text-center pt-8 lg:text-left px-8 md:px-12 lg:w-1/2">
             <div>
               <h2 className="text-3xl font-bold text-amber-950 md:text-4xl">
@@ -22,12 +24,10 @@ function Home() {
                 equilibrado.
               </p>
               <div className="flex justify-center lg:justify-start mt-6">
-                <a
-                  className="px-4 py-3 bg-amber-950 text-gray-200 text-xs font-semibold rounded hover:bg-amber-900"
-                  href="#"
-                >
-                  Nossas Mudas
-                </a>
+                <Link to={`/produtos`} className="px-4 py-3 bg-amber-950 text-gray-200 text-xs font-semibold rounded hover:bg-amber-900"
+                  href="#">
+                <button>Nossas Mudas</button>
+               </Link>
               </div>
             </div>
           </div>
@@ -38,15 +38,14 @@ function Home() {
         </div>
 
       </div>
-      <ListaCategoria />
 
-        <div className="py-12 bg-lime-50 flex items-center justify-center border-radius auto">
+        <div className="py- bg-lime-50 flex items-center justify-center border-radius auto">
           <h2 className="text-3xl font-bold text-amber-950 md:text-4xl">
             Categorias
           </h2>
         </div>
 
-        <div className="max-w-screen-xl flex flex-wrap md:flex-nowrap mx-auto px-16 py-8 gap-12">
+        {/* <div className="max-w-screen-xl flex flex-wrap md:flex-nowrap mx-auto px-16 py-8 gap-12">
           <div className="flex flex-col gap-2">
             <a href="" className="bg-green-500 rounded-full">
               <img
@@ -214,8 +213,8 @@ function Home() {
               </a>
             </div>
           </div>
-        </div>
-      </div>
+        </div> */}
+        <ListaCategoria />
     </>
   );
 }
