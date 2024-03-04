@@ -6,6 +6,7 @@ interface CardCategoriaProps {
 }
 
 function CardCategoria({ categoria }: CardCategoriaProps) {
+  
   return (
     // <div className='border flex flex-col rounded-2xl overflow-hidden justify-between'>
     //   <header className='py-2 px-6 bg-yellow-300 text-white font-bold text-2xl'>{categoria.nomeCategoria}</header>
@@ -19,7 +20,7 @@ function CardCategoria({ categoria }: CardCategoriaProps) {
     //     </Link>
     //   </div>
     // </div>
-    <div className="max-w-screen-xl flex flex-row md:flex-auto mx-auto px-20 py-4 gap-12">
+    <div className="max-w-screen-xl flex flex-wrap md:flex-nowrap mx-auto px-16 py-8 gap-12">
       <div className="flex flex-col gap-2">
         <a href="" className="bg-green-500 rounded-full">
           <img

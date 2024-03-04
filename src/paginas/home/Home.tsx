@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import imagemHome from "../../assets/img/imagem-home2.png";
 import ListaCategoria from "../../components/categorias/listaCategoria/ListaCategoria";
-import ListaProduto from "../../components/produtos/listaProduto/ListaProduto";
+//import ListaProduto from "../../components/produtos/listaProduto/ListaProduto";
 
 function Home() {
   return (
@@ -44,7 +44,7 @@ function Home() {
             Categorias
           </h2>
         </div>
-
+        
         {/* <div className="max-w-screen-xl flex flex-wrap md:flex-nowrap mx-auto px-16 py-8 gap-12">
           <div className="flex flex-col gap-2">
             <a href="" className="bg-green-500 rounded-full">
