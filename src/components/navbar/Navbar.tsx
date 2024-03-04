@@ -41,6 +41,7 @@ function Navbar() {
               Mudas
             </Link>
             <Link to='' onClick={logout} className='hover:underline font-bold'>Sair</Link>
+            <Link to="/produtos" className="hoover:underline font-bold">Produtos</Link>
             </div>
 
       {/* <nav className="bg-white border-gray-200 dark:bg-gray-900">
