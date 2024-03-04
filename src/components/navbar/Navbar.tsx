@@ -1,6 +1,6 @@
 
 import { Link, useNavigate } from "react-router-dom";
-import homeLogo from "../../assets/img/logo-reflorescer.png"
+import homeLogo from "../../assets/img/Green_Natural_Green_House_Presentation-removebg-preview.png"
 import { AuthContext } from "../../context/AuthContext";
 import { useContext } from "react";
         

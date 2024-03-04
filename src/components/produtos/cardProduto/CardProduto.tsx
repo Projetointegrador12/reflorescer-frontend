@@ -7,7 +7,7 @@ interface CardProdutoProps {
 
 function CardProduto({post}: CardProdutoProps) {
   return (
-    <div className='border-slate-900 border flex flex-col rounded overflow-hidden justify-between'>
+    <div className='border-slate-900 border flex flex-col rounded overflow-hidden justify-between mx-0'>
       <div>
         <div className="flex w-full bg-yellow-200 py-2 px-4 items-center gap-4">
           <img src={post.foto} className='h-12 rounded-full' alt="" />

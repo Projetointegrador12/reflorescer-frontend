@@ -22,7 +22,7 @@ function Home() {
                 ambiente, contribuindo assim para um futuro mais sustentável e
                 equilibrado.
               </p>
-              <div className="flex justify-center lg:justify-start mt-6">
+              <div className="flex justify-center lg:justify-start mt-6 mx-0">
                 <Link to={`/categorias`} className="px-4 py-3 bg-amber-950 text-gray-200 text-xs font-semibold rounded hover:bg-amber-900"
                   href="#">
                   <button>Navegue Por Categoria</button>
