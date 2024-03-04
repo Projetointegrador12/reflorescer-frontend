@@ -11,11 +11,12 @@ function CardProduto({post}: CardProdutoProps) {
       <div>
         <div className="flex w-full bg-yellow-200 py-2 px-4 items-center gap-4">
           <img src={post.foto} className='h-12 rounded-full' alt="" />
-          <h3 className='text-lg font-bold text-center uppercase '>{post.categoria?.nomeCategoria}</h3>
+          <h3 className='text-lg font-bold text-center uppercase '>{post.nome}</h3>
         </div>
         <div className='p-4 '>
-          <h4 className='text-lg font-semibold uppercase'>{post.nome}</h4>
           <p>{post.descricao}</p>
+          <br></br>
+          <h4 className='flex w-full bg-yellow-200 py-2 px-4 items-center gap-4 text-lg font-semibold '>Categoria: {post.categoria?.nomeCategoria}</h4>
         </div>
       </div>
       <div className="flex">
