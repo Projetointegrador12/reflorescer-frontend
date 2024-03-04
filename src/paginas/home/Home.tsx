@@ -24,8 +24,7 @@ function Home() {
                 equilibrado.
               </p>
               <div className="flex justify-center lg:justify-start mt-6">
-                <Link to={`/categorias`} className="px-4 py-3 bg-amber-950 text-gray-200 text-xs font-semibold rounded hover:bg-amber-900"
-                  href="#">
+                <Link to={`/categorias`} className="px-4 py-3 bg-amber-950 text-gray-200 text-xs font-semibold rounded hover:bg-amber-900">
                   <button>Navegue Por Categoria</button>
                 </Link>
               </div>
