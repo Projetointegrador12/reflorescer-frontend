@@ -8,7 +8,7 @@ function Sobre() {
             <div className=" relative ">
               <div className=" absolute top-0 -left-48 z-0  opacity-50 "></div>
               <div className="lg:max-w-xl lg:pr-5 relative z-40">
-                <p className="flex text-sm uppercase text-g1  ">Sobre nós</p>
+                <p className="flex text-2xl uppercase text-g1  ">Sobre nós</p>
                 <h2 className="mb-6 max-w-lg text-5xl font-light leading-snug tracking-tight text-amber-950 sm:text-7xl sm:leading-snug">
                   Vamos mudar o
                   <span className="my-1 inline-block border-b-8 border-amber-950 px-4 font-bold text-g4 animate__animated animate__flash">
@@ -67,7 +67,7 @@ function Sobre() {
 
       </div>
       <div className="justify-items-center">
-        <div className="flex justify-center flex-wrap -mx-3 mb-5">
+        <div className="flex justify-center flex-wrap -mx-3 mb-0">
           <div className="w-full max-w-full px-3 mb-6  mx-auto">
             <div className="flex flex-col break-words min-w-0 bg-clip-border rounded-[.95rem] border border-dashed border-stone-600 bg-lime-50 m-5">
 
