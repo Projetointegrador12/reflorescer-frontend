@@ -11,7 +11,7 @@ function Home() {
           <div className="flex items-center text-center pt-8 lg:text-left px-8 md:px-12 lg:w-1/2">
             <div>
               <h2 className="text-3xl font-bold text-amber-950 md:text-4xl">
-                Seja Bem Vindo
+                Seja Bem Vinde
               </h2>
               <p className="mt-2 text-sm text-gray-500 md:text-base">
                 Somos uma empresa dedicada à produção e comercialização de mudas
@@ -38,7 +38,7 @@ function Home() {
         </div>
       </div>
 
-      <div className="flex justify-center text-2xl font-bold text-amber-950 md:text-4xl py-8">
+      <div className="flex justify-center text-2xl font-bold text-amber-950 md:text-4xl pt-8">
         <h1>Nossas Mudas</h1>
       </div>
       <ListaProduto/>

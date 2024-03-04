@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import homeLogo from "../../assets/img/logo-reflorescer.png"
 import { AuthContext } from "../../context/AuthContext";
 import { useContext } from "react";
+import { toastAlerta } from "../../util/toastAlerta";
         
 function Navbar() {
   const navigate = useNavigate()
@@ -11,7 +12,7 @@ function Navbar() {
 
   function logout() {
     handleLogout()
-    alert('Usuário deslogado com sucesso')
+    toastAlerta('Usuário deslogado com sucesso', 'info')
     navigate('/login')
   }
 
@@ -20,7 +21,7 @@ function Navbar() {
       <div className="w-full bg-lime-50 text-lime-800 flex justify-start px-2 py-4">
         <div className="container flex justify-between text-lg">
           <div className="flex justify gap-2">
-            <img src={homeLogo} alt="logo-reflorescer.png" className='w-60' />
+            <img src={homeLogo} alt="logo-reflorescer.png" className='w-60 px-4' />
           </div>
           <div className="flex gap-6">
             <Link to="/login" className="hover:underline font-bold">

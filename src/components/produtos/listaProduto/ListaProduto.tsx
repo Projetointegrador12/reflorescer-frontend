@@ -52,7 +52,7 @@ function ListaProduto() {
           wrapperClass="dna-wrapper mx-auto"
         />
       )}
-      <div className='container mx-auto my-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
+      <div className='container mx-auto my-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 py-12'>
         {produto.map((produto) => (
           <CardProduto key={produto.id} post={produto} />
         ))}

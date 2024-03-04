@@ -49,7 +49,7 @@ function FormularioCategoria() {
                     }
                 })
 
-                alert('Categoria atualizado com sucesso')
+                toastAlerta('Categoria atualizado com sucesso', 'sucesso')
                 retornar()
 
             } catch (error: any) {
@@ -70,15 +70,15 @@ function FormularioCategoria() {
                     }
                 })
 
-                alert('Categoria cadastrada com sucesso!')
+                toastAlerta('Categoria cadastrada com sucesso!', 'sucesso')
 
             } catch (error: any) {
                 console.error(error)
                 if (error.toString().includes('403')) {
-                    alert('O token expirou, favor logar novamente')
+                    toastAlerta('O token expirou, favor logar novamente', 'info')
                     handleLogout()
                 } else {
-                    alert('Erro ao cadastrar a Categoria')
+                    toastAlerta('Erro ao atualizar a Categoria', 'erro')
                     toastAlerta('Erro ao cadastrar a Categoria', 'erro')
                 }
             }
@@ -93,7 +93,7 @@ function FormularioCategoria() {
 
     useEffect(() => {
         if (token === '') {
-            alert('Você precisa estar logado');
+            toastAlerta('Você precisa estar logado', 'erro');
             navigate('/login');
         }
     }, [token]);
